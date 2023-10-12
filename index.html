@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Currency Converter</h1>
+      <div class="currency-container">
+        <select name="" id="currency-one">
+          <option value="USD" selected>USD</option>
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+        </select>
+        <input type="number" id="worth-one" value="1" min="0" />
+      </div>
+      <div class="currency-container">
+        <select name="" id="currency-two">
+          <option value="USD">USD</option>
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="KES" selected>KES</option>
+        </select>
+        <input type="number" id="worth-two" disabled />
+      </div>
+      <p class="exchange-rate" id="exchange-rate">1 USD = 146 KES</p>
+    </div>
+  </body>
+</html>
